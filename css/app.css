@@ -1,6 +1,18 @@
 *{
     box-sizing: border-box;
 }
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+p{
+    line-height: 22px;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 #main{
     width: 76%;
     margin: 0 auto;
@@ -27,16 +39,19 @@
     height:15vw;
     background-color: #7d8685;
     float: left;
+    padding: 15px;
+    color: #fff;
 
 }
 
 .square {
     text-align: center;
-    line-height:15vw;
+    /*line-height:15vw;*/
     width: 15vw;
     height:15vw;
     background-color: #222;
     float: left;
+    position: relative;
 }
 
 .beige{
@@ -50,4 +65,80 @@
 }
 .brun{
     background-color: #5b2424;
+}
+.btn{
+    display: inline-block;
+    padding: 8px 15px;
+    border:1px solid #fff;
+    margin-top: 25px;
+    font-size: 22px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #5b2424;
+    transition: all 0.4s;
+}
+.btn i{
+    margin-right: 5px;
+}
+a.square{
+    color: #fff;
+}
+a.square:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+a.square:hover i{
+    font-size: 50px;
+    transition: font-size 0.4s;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.icon i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1355px) {
+    .rect p{
+        display: none;
+    }
+    .btn{
+        margin-top: 5px;
+    }
+}
+@media (max-width: 818px) {
+    #main{
+        width: 100%;
+    }
+
+    .col-2{
+        width: 100%;
+        height:auto;
+    }
+    .col-2 img{
+        width: 100%;
+    }
+    .col-3{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .rect {
+        width: 100%;
+        height: 140px;
+        text-align: center;
+
+    }
+
+    .square {
+        width: 100%;
+        height: 120px;
+    }
 }
